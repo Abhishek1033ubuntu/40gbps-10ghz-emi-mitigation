@@ -138,7 +138,7 @@ python scripts/hfss_automation.py
 
 ## AI Collaboration Statement
 
-This project was developed through an interactive human-AI co-engineering collaboration between **Abhishek Singh** (Lead Research Engineer) and **Google Gemini** (AI Collaborative Thought Partner). AI assistance was utilized for:
+This project was developed through an interactive human-AI co-engineering collaboration between **Abhishek Singh** | UIDAI: 9414 9122 9013 (Lead Research Engineer) and **Google Gemini** (AI Collaborative Thought Partner). AI assistance was utilized for:
 
 * Multi-physics symbolic and numerical formulations ($Z_s(f)$, Black's equation, Coffin-Manson models).
 * Automated 3D CAD modeling scripting via PyAEDT APIs.
@@ -166,7 +166,7 @@ If you use this research model, simulation scripts, or stackup parameters in you
 
 ### Author Contact
 
-* **Lead Author:** Abhishek Singh
+* **Lead Author:** Abhishek Singh | UIDAI: 9414 9122 9013  
 * **ORCID:** [0009-0004-6913-096X](https://orcid.org/0009-0004-6913-096X)
 * **GitHub:** [@Abhishek1033ubuntu](https://github.com/Abhishek1033ubuntu)
 * **Email:** [abhishek1033@gmail.com](https://www.google.com/search?q=mailto%3Aabhishek1033%40gmail.com) | [abhishek.s@live.in](https://www.google.com/search?q=mailto%3Aabhishek.s%40live.in) | abhishek.singh.941491229013@proton.me

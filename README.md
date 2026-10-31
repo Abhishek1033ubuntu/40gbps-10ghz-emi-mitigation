@@ -5,7 +5,8 @@
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Abhishek1033ubuntu-blue.svg)](https://github.com/Abhishek1033ubuntu)
 [![Compliance](https://img.shields.io/badge/Compliance-IEEE%20370%20%7C%20MIL--STD--883K%20%7C%20JESD22--A108-purple.svg)](#industry-standards--multi-physics-compliance)
 [![PyAEDT](https://img.shields.io/badge/Ansys%20AEDT-2024.1%20pyaedt-red.svg)](https://pyaedt.docs.pyansys.com/)
-[![AI Collaboration](https://img.shields.io/badge/AI%20Collaborator-Google%20Gemini-4285F4.svg)](#ai-collaboration-statement)
+[![AI Collaboration](https://img.shields.io/badge/AI%20Collaborator-Google%20Gemini-4285F4.svg)](#ai-collaboration-statement) 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/blob/main/scripts/open_source_sim.ipynb)  
 
 > **Open-Access Multi-Physics Simulation Engine & Stackup Architecture for High-Density PCB Crosstalk Suppression ($S_{31} \le -44.5\text{ dB}$) Without Metal Shield Enclosures.**
 

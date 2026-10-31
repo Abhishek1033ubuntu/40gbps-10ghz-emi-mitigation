@@ -133,8 +133,12 @@ Ensure Ansys Electronics Desktop (2024.1+) is installed, then run:
 ```bash
 python scripts/hfss_automation.py
 
-```
+### Interactive Cloud Execution
 
+Run the full S-parameter extraction and IEEE 370 compliance verification directly in your browser:
+```
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/blob/main/scripts/open_source_sim.ipynb)
+```
 ---
 
 ## AI Collaboration Statement

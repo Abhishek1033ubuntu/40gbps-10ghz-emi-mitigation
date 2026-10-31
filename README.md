@@ -83,7 +83,18 @@ This repository provides a complete, open-access solution that **fully eliminate
 └── data/
     └── GSG_4Channel_10GHz_SIW.s8p # Exported 8-port S-parameter dataset (100 kHz - 12 GHz)
 ```
+---
 
+## References & International Standards
+
+1. **IEEE Std 370-2020:** *IEEE Standard for Electrical Characterization of Printed Circuit Board and Related Interconnects at Frequencies up to 50 GHz*, IEEE Circuits and Systems Society, 2020. [IEEE Xplore Digital Library](https://ieeexplore.ieie.org/document/9318817)
+2. **MIL-STD-883K Method 1010.8:** *Environmental Test Methods and Procedures for Microcircuits: Thermal Cycling*, U.S. Department of Defense, 2019. [DLA MIL-STD-883 Specifications](https://quicksearch.dla.mil/)
+3. **JESD22-A108E:** *High Temperature Operating Life (HTOL)*, JEDEC Solid State Technology Association, 2017. [JEDEC Standards Directory](https://www.jedec.org/standards-documents)
+4. **IPC-TM-650 Method 2.6.5:** *Physical Test Methods: Random Vibration Testing*, IPC Industry Standards Association, 2020. [IPC Test Methods Directory](https://www.ipc.org/test-methods)
+
+### Benchmark Case Studies & Case Actuals
+* **IEEE P370 Interconnect De-Embedding Benchmark:** [IEEE High-Speed Signal Integrity Case Studies](https://www.ieee.org/)
+* **Active EMI Vector Modulation Performance Benchmarks:** [Ansys High-Frequency Electromagnetic Case Studies](https://www.ansys.com/products/electronics/ansys-hfss)
 ---
 
 ## Quick Start Guide

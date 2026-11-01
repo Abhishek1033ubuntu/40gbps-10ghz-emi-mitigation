@@ -1,18 +1,21 @@
 cff-version: 1.2.0
-title: "40 Gbps 10 GHz High-Performance EMI Mitigation Architecture: 3-Tier FGM & Active Cancellation"
-message: "If you use this simulation model or stackup architecture, please cite it as below."
+title: "40 Gbps 50 GHz High-Performance EMI Mitigation Architecture: 3-Tier FGM & Active Vector Cancellation"
+message: "If you use this simulation model or 50 GHz stackup alignment, please cite it as below."
 type: software
 authors:
   - family-names: "Singh"
     given-names: "Abhishek"
     orcid: "https://orcid.org/0009-0004-6913-096X"
+    email: "abhishek1033@gmail.com"
 repository-code: "https://github.com/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation"
 keywords:
   - EMI Mitigation
-  - High-Speed PCB
+  - 50 GHz Signal Integrity
+  - IEEE 370
   - Functionally Graded Material
   - Substrate Integrated Waveguide
   - Active Vector Cancellation
   - PyAEDT
-date-released: 2026-10-31
+date-released: 2026-11-01
 license: MIT
+version: "1.1.0"

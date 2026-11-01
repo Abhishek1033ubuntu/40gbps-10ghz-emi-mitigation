@@ -105,8 +105,11 @@ To comply with the full scope of **IEEE Std 370-2020** (*Electrical Characteriza
 │   ├── hfss_automation.py         # PyAEDT 3D HFSS simulation & Touchstone export script
 │   ├── touchstone_generator.py    # Standalone Python .s8p Touchstone matrix generator
 │   └── numerical_simulation.py    # Analytical telegrapher equation solver
+│   └── open_source_sim.py
+│   └── open_source_sim.ipynb
 └── data/
     └── GSG_4Channel_10GHz_SIW.s8p # Exported 8-port S-parameter dataset (100 kHz - 12 GHz)
+    └── GSG_4Channel_50GHz_Aligned.s8p
     └── open_source_s_parameters.png
     └── open_source_50ghz_profile.png
 ```

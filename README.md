@@ -6,7 +6,8 @@
 [![Compliance](https://img.shields.io/badge/Compliance-IEEE%20370%20%7C%20MIL--STD--883K%20%7C%20JESD22--A108-purple.svg)](#industry-standards--multi-physics-compliance)
 [![PyAEDT](https://img.shields.io/badge/Ansys%20AEDT-2024.1%20pyaedt-red.svg)](https://pyaedt.docs.pyansys.com/)
 [![AI Collaboration](https://img.shields.io/badge/AI%20Collaborator-Google%20Gemini-4285F4.svg)](#ai-collaboration-statement) 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/blob/main/scripts/open_source_sim.ipynb)  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/blob/main/scripts/open_source_sim.ipynb) 
+[![PyPI version](https://badge.fury.io/py/emi-mitigation-sim.svg)](https://pypi.org/project/emi-mitigation-sim/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23863697-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23863697)
 
 > **Open-Access Multi-Physics Simulation Engine & Stackup Architecture for High-Density PCB Crosstalk Suppression ($S_{31} \le -44.5\text{ dB}$) Without Metal Shield Enclosures.**
@@ -124,7 +125,8 @@ To comply with the full scope of **IEEE Std 370-2020** (*Electrical Characteriza
 │   └── open_source_50ghz_profile.png
 │
 └── tests/                         # Automated Package Test Suite
-    └── test_sim.py                # Pytest unit tests for package build validation```
+    └── test_sim.py                # Pytest unit tests for package build validation
+```
 ---
 ## Open-Source Signal Integrity Validation
 
@@ -156,7 +158,14 @@ The 4-channel GSG stripline S-parameters were verified using `scikit-rf` against
 ### Prerequisites
 ```bash
 pip install numpy scikit-rf pyaedt
+```
 
+### Verify Global PyPI Installation
+To test the public registry deployment in any clean Python terminal or cloud environment:
+
+```
+pip install emi-mitigation-sim
+emi-sim
 ```
 
 ### Running the Touchstone Data Generator

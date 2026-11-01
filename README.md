@@ -7,12 +7,12 @@
 [![PyAEDT](https://img.shields.io/badge/Ansys%20AEDT-2024.1%20pyaedt-red.svg)](https://pyaedt.docs.pyansys.com/)
 [![AI Collaboration](https://img.shields.io/badge/AI%20Collaborator-Google%20Gemini-4285F4.svg)](#ai-collaboration-statement) 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/blob/main/scripts/open_source_sim.ipynb)  
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23840772-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23840772)  
-
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23863697-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23863697)
 
 > **Open-Access Multi-Physics Simulation Engine & Stackup Architecture for High-Density PCB Crosstalk Suppression ($S_{31} \le -44.5\text{ dB}$) Without Metal Shield Enclosures.**
 
 "Designed for 40 Gbps 10 GHz operation, with verified structural scalability up to 50 GHz under IEEE Std 370-2020 by adjusting SIW via pitch to $0.50\text{ mm}$ ($p \le \lambda_g/6$)."
+
 ---
 
 ## Executive Summary

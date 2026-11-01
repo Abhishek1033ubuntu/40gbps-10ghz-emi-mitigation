@@ -1,6 +1,6 @@
 """
-Ansys HFSS Automation Script via PyAEDT
-Constructs 4-Channel 50-Ohm GSG Stripline with SIW Via Fences and FGM Traces
+Ansys HFSS Automation Script via PyAEDT (50 GHz Compliant Setup)
+Constructs 4-Channel 50-Ohm GSG Stripline with Tightened SIW Via Fences (p = 0.50 mm)
 
 Author: Abhishek Singh (ORCID: 0009-0004-6913-096X)
 License: MIT
@@ -9,13 +9,13 @@ License: MIT
 import sys
 from pyaedt import Hfss
 
-def run_hfss_simulation():
+def run_hfss_simulation_50g():
     desktop_version = "2024.1"
     non_graphical = False
 
     hfss = Hfss(
-        projectname="GSG_4Channel_10GHz_SIW",
-        designname="MultiChannel_GSG_Stripline",
+        projectname="GSG_4Channel_50GHz_SIW",
+        designname="MultiChannel_GSG_Stripline_50GHz",
         specified_version=desktop_version,
         non_graphical=non_graphical,
         new_desktop_session=True
@@ -35,8 +35,9 @@ def run_hfss_simulation():
     t_agpd = 0.0013
     t_total_trace = t_cu + t_nife + t_agpd
 
+    # Tightened SIW via pitch for 50 GHz surface wave suppression
     d_via = 0.200
-    pitch_via = 0.800
+    pitch_via = 0.500   # Updated from 0.800 mm to 0.500 mm (p <= lambda_g / 6)
     s_via_clearance = 0.225
 
     num_channels = 4
@@ -94,7 +95,7 @@ def run_hfss_simulation():
             matname="Ag_2p5Pd_Alloy"
         )
 
-    # SIW Via Fences
+    # Tightened SIW Via Fences (p = 0.50 mm)
     via_positions_x = [-s_via_clearance, s_via_clearance]
     num_vias_y = int(L_sub / pitch_via)
 
@@ -131,23 +132,23 @@ def run_hfss_simulation():
         )
         hfss.wave_port_multimodal(assignment=port_out.name, modes=1, port_name=f"P{ch+1}_Out")
 
-    # Solver Setup
-    setup = hfss.create_setup(name="Setup_10GHz")
-    setup.props["Frequency"] = "10.0GHz"
+    # Setup 50 GHz Adaptive Frequency Sweep
+    setup = hfss.create_setup(name="Setup_50GHz")
+    setup.props["Frequency"] = "50.0GHz"
     setup.props["MaxDeltaS"] = 0.01
-    setup.props["MaximumPasses"] = 15
+    setup.props["MaximumPasses"] = 18
 
     hfss.create_frequency_sweep(
-        setup="Setup_10GHz",
+        setup="Setup_50GHz",
         sweep_type="Interpolating",
-        sweep_name="Sweep_100kHz_12GHz",
+        sweep_name="Sweep_100kHz_50GHz",
         start_frequency="100kHz",
-        stop_frequency="12.0GHz",
-        num_of_freq_points=201
+        stop_frequency="50.0GHz",
+        num_of_freq_points=501
     )
 
     hfss.save_project()
-    print("=== HFSS MODEL CONSTRUCTED & SAVED SUCCESSFULLY ===")
+    print("=== 50 GHz HFSS MODEL CONSTRUCTED & SAVED SUCCESSFULLY ===")
 
 if __name__ == "__main__":
-    run_hfss_simulation()
+    run_hfss_simulation_50g()

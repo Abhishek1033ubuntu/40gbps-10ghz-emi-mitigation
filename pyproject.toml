@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emi-mitigation-sim"
+version = "1.1.0"
+authors = [
+  { name="Abhishek Singh", email="abhishek1033@gmail.com" },
+]
+description = "Multi-physics simulation & Touchstone dataset generator for 40 Gbps 50 GHz 4-channel GSG FGM stripline EMI mitigation."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+keywords = [
+    "rf-engineering",
+    "signal-integrity",
+    "emi-mitigation",
+    "ieee-370",
+    "substrate-integrated-waveguide",
+    "siw",
+    "pyaedt",
+    "scikit-rf"
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.4.0",
+    "scikit-rf>=0.24.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation"
+"Bug Tracker" = "https://github.com/Abhishek1033ubuntu/40gbps-10ghz-emi-mitigation/issues"
+"ORCID" = "https://orcid.org/0009-0004-6913-096X"
+
+[project.scripts]
+emi-sim = "emi_mitigation_sim.cli:main"

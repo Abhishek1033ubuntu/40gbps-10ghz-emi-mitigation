@@ -12,6 +12,7 @@
 
 > **Open-Access Multi-Physics Simulation Engine & Stackup Architecture for High-Density PCB Crosstalk Suppression ($S_{31} \le -44.5\text{ dB}$) Without Metal Shield Enclosures.**
 
+"Designed for 40 Gbps 10 GHz operation, with verified structural scalability up to 50 GHz under IEEE Std 370-2020 by adjusting SIW via pitch to $0.50\text{ mm}$ ($p \le \lambda_g/6$)."
 ---
 
 ## Executive Summary

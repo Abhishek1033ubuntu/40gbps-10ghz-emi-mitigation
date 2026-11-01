@@ -98,21 +98,33 @@ To comply with the full scope of **IEEE Std 370-2020** (*Electrical Characteriza
 
 ```
 40gbps-10ghz-emi-mitigation/
-├── README.md                      # Primary project documentation & compliance report
+├── pyproject.toml                 # PyPI package configuration & CLI entry points
+├── README.md                      # Unified documentation, benchmarks & installation guide
 ├── LICENSE                        # MIT License
-├── CITATION.cff                   # Academic citation metadata for Zenodo / ORCID indexing
-├── scripts/
-│   ├── hfss_automation.py         # PyAEDT 3D HFSS simulation & Touchstone export script
-│   ├── touchstone_generator.py    # Standalone Python .s8p Touchstone matrix generator
-│   └── numerical_simulation.py    # Analytical telegrapher equation solver
-│   └── open_source_sim.py
-│   └── open_source_sim.ipynb
-└── data/
-    └── GSG_4Channel_10GHz_SIW.s8p # Exported 8-port S-parameter dataset (100 kHz - 12 GHz)
-    └── GSG_4Channel_50GHz_Aligned.s8p
-    └── open_source_s_parameters.png
-    └── open_source_50ghz_profile.png
-```
+├── CITATION.cff                   # Zenodo / ORCID academic citation metadata
+│
+├── src/                           # Core Installable Package (`pip install emi-mitigation-sim`)
+│   └── emi_mitigation_sim/
+│       ├── __init__.py            # Module exports and versioning
+│       ├── simulator.py           # Core validation & scikit-rf analysis engine
+│       ├── touchstone.py          # Programmatic .s8p Touchstone generator
+│       └── cli.py                 # Terminal command-line entry point (`emi-sim`)
+│
+├── scripts/                       # Standalone & CAD Automation Track
+│   ├── hfss_automation.py         # Track A: PyAEDT 3D HFSS CAD automation (Commercial)
+│   ├── numerical_simulation.py    # Analytical telegrapher equation & Z_s(f) surface solver
+│   ├── open_source_sim.py         # Track B: Standalone open-source runner script
+│   ├── open_source_sim.ipynb      # Interactive 1-click Google Colab notebook
+│   └── touchstone_generator.py    # Standalone dataset generator script
+│
+├── data/                          # Reference Datasets & Plot Artifacts
+│   ├── GSG_4Channel_10GHz_SIW.s8p
+│   ├── GSG_4Channel_50GHz_Aligned.s8p
+│   ├── open_source_s_parameters.png
+│   └── open_source_50ghz_profile.png
+│
+└── tests/                         # Automated Package Test Suite
+    └── test_sim.py                # Pytest unit tests for package build validation```
 ---
 ## Open-Source Signal Integrity Validation
 
